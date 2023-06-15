@@ -1,0 +1,11 @@
+# Use the Ubuntu 20.04 base image
+FROM ubuntu:20.04
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Create a hello_world.txt file
+RUN echo "Hello, World!" > hello_world.txt
+
+# Define the command to run when the container starts
+CMD ["cat", "hello_world.txt"]
